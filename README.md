@@ -1,7 +1,7 @@
 # Team: Ayaulym Kenzhekul SE-2314,Tomiris Tapen SE-2316,Danial Yerzhigit SE-2314
 # Project Description
 
-This project is a blockchain-based application built using the Hardhat development environment. It includes smart contracts, scripts, and testing infrastructure to deploy, manage, and interact with decentralized applications (dApps). The main focus appears to be on managing transactions and validating contract functionality.
+This project is a blockchain-based application built using the Hardhat development environment. It includes smart contracts, scripts, and testing infrastructure to deploy, manage, and interact with decentralized applications (dApps). The main focus appears to be on managing transactions, validating contract functionality, and implementing ERC20 tokens for creating fungible, Ethereum-compatible tokens used in payments, staking, and tokenized systems.
 
 ## Key Features
 - Smart contracts written in Solidity.
@@ -82,6 +82,21 @@ npx hardhat test
   ```
 
 ---
+Key Functions
+
+The ERC20 token implementation in this project includes the following essential functions:
+
+totalSupply(): Returns the total token supply.
+
+balanceOf(address account): Returns the balance of a specific account.
+
+transfer(address recipient, uint256 amount): Transfers tokens to a specified address.
+
+approve(address spender, uint256 amount): Approves a spender to transfer tokens on behalf of the owner.
+
+transferFrom(address sender, address recipient, uint256 amount): Executes a transfer on behalf of another address.
+
+allowance(address owner, address spender): Returns the remaining number of tokens a spender is allowed to spend.
 
 # License
 This project is licensed under the terms specified in the `LICENSE` file.
