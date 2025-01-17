@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.2.0"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.22.18"
+  },
+  "name": "madiyardidaralibekas3-main",
+  "version": "1.0.0",
+  "description": "Zholdybayev Didar, Daniarbek Madiyar, Zhumabayev Alibek Blockchain Technologies Assignment 3",
+  "main": "checkTransaction.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
