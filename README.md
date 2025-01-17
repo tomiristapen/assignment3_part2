@@ -26,7 +26,7 @@ Ensure you have the following installed:
 1. Clone the repository:
    ```bash
    git clone <repository_url>
-   cd MadiyarDidarAlibekAS3-main
+   cd erc
    ```
 2. Install dependencies:
    ```bash
