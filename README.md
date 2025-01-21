@@ -46,7 +46,20 @@ Ensure you have the following installed:
    npx hardhat run scripts/deploy.js --network ganache
    ```
 
-![run deploy.js](images/image.png)
+3. interact.js to see the functionalities:
+  ```bash
+  npx hardhat run scripts/interact.js --network ganache
+  ```
+  
+![run deploy.js](images/imagedepint.png)
+
+import tokens to metamask ganache account:
+
+![run deploy.js](images/image1.png)
+
+![run deploy.js](images/image3.png)
+
+![run deploy.js](images/image301.png)
 
 ---
 Key Functions
