@@ -8,7 +8,7 @@ contract ERC20_smart_contract is ERC20 {
     address public lastReceiver;
     uint256 public lastTimestamp;
 
-    constructor(uint256 initialSupply) ERC20("AITU_SE-2316-17_MDA_Token", "MDA") {
+    constructor(uint256 initialSupply) ERC20("AITU_SE-2314-16Token", "MDA") {
         _mint(msg.sender, initialSupply * (10 ** decimals()));
     }
 
