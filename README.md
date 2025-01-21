@@ -9,13 +9,7 @@ This project is a blockchain-based application built using the Hardhat developme
 - Scripts to deploy and verify contracts.
 - Testing suite for validating contract functionality.
 - Includes pre-configured caching and artifact directories.
-
 ---
-
-# Setup Instructions
-
-Follow these steps to set up the project:
-
 ### Prerequisites
 Ensure you have the following installed:
 1. **Node.js** (version 14.x or later)
@@ -33,14 +27,10 @@ Ensure you have the following installed:
    npm install
    ```
 
-### Configuration
-- Ensure you have a `.env` file configured with necessary environment variables such as:
-  ```
-  INFURA_API_KEY=your_infura_key
-  PRIVATE_KEY=your_private_key
-  NETWORK=network_name
-  ```
-
+3.
+   ```bash
+   npx hardhat
+   ``` 
 ---
 
 # How to Run
@@ -50,53 +40,30 @@ Ensure you have the following installed:
    ```bash
    npx hardhat compile
    ```
-2. Start a local blockchain network:
-   ```bash
-   npx hardhat node
-   ```
-
 ### Deploying Contracts
-1. Deploy contracts to the local network:
+2. Deploy contracts to the local network:
    ```bash
-   npx hardhat run scripts/deploy.js --network localhost
-   ```
-2. Deploy to a specific network (e.g., Rinkeby):
-   ```bash
-   npx hardhat run scripts/deploy.js --network rinkeby
+   npx hardhat run scripts/deploy.js --network ganache
    ```
 
-### Running Tests
-Run the test suite to validate contract functionality:
-```bash
-npx hardhat test
-```
-
-### Additional Scripts
-- To check transactions:
-  ```bash
-  node checkTransaction.js
-  ```
-- Use the provided shell script for deployment and verification:
-  ```bash
-  ./deploy_and_check.sh
-  ```
+![run deploy.js](images/image.png)
 
 ---
 Key Functions
 
-The ERC20 token implementation in this project includes the following essential functions:
+- The ERC20 token implementation in this project includes the following essential functions:
 
-totalSupply(): Returns the total token supply.
+- totalSupply(): Returns the total token supply.
 
-balanceOf(address account): Returns the balance of a specific account.
+- balanceOf(address account): Returns the balance of a specific account.
 
-transfer(address recipient, uint256 amount): Transfers tokens to a specified address.
+- transfer(address recipient, uint256 amount): Transfers tokens to a specified address.
 
-approve(address spender, uint256 amount): Approves a spender to transfer tokens on behalf of the owner.
+- approve(address spender, uint256 amount): Approves a spender to transfer tokens on behalf of the owner.
 
-transferFrom(address sender, address recipient, uint256 amount): Executes a transfer on behalf of another address.
+- transferFrom(address sender, address recipient, uint256 amount): Executes a transfer on behalf of another address.
 
-allowance(address owner, address spender): Returns the remaining number of tokens a spender is allowed to spend.
+- allowance(address owner, address spender): Returns the remaining number of tokens a spender is allowed to spend.
 
 # License
 This project is licensed under the terms specified in the `LICENSE` file.
