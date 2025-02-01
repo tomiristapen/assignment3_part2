@@ -1,4 +1,4 @@
-# Team: Ayaulym Kenzhekul SE-2314,Tomiris Tapen SE-2316,Danial Yerzhigit SE-2314
+# Team: Tomiris Tapen SE-2316, Ayaulym Kenzhekul SE-2314, Danial Yerzhigit SE-2314
 # Project Description
 
 This project is a blockchain-based application built using the Hardhat development environment. It includes smart contracts, scripts, and testing infrastructure to deploy, manage, and interact with decentralized applications (dApps). The main focus appears to be on managing transactions, validating contract functionality, and implementing ERC20 tokens for creating fungible, Ethereum-compatible tokens used in payments, staking, and tokenized systems.
@@ -18,9 +18,9 @@ Ensure you have the following installed:
 
 ### Installation
 1. Clone the repository:
-   ```bash
-   git clone <repository_url>
-   cd erc
+```bash
+   git clone https://github.com/tomiristapen/assignment3_part2.git
+   cd assignment3_part2
    ```
 2. Install dependencies:
    ```bash
@@ -78,6 +78,36 @@ Key Functions
 
 - allowance(address owner, address spender): Returns the remaining number of tokens a spender is allowed to spend.
 
+**test for initial smart contract:**
+---
+![run deploy.js](images/image.png)
+
+
+Key Tests:
+
+- Deployment Test: Verifies that the total supply is assigned to the owner upon deployment.
+- Transfer Test: Tests token transfers between accounts and verifies the balances.
+- Event Emission Test: Checks that the Transfer event is emitted correctly during a transfer.
+- Last Sender/Receiver Test: Verifies that the contract correctly tracks the last sender and receiver addresses.
+- Last Timestamp Test: Verifies that the contract correctly tracks the timestamp of the last transaction.
+
+
+**Modified Smart Contract: AITU_SE_2314_16Token2.sol**
+---
+
+- Constructor: Accepts initialSupply to initialize the token supply.
+- Transfer Function: Overrides the transfer function to update lastSender, lastReceiver, and lastTimestamp.
+- Helper Functions: Provides functions to retrieve the last sender, receiver, and a human-readable timestamp of the last transaction.
+
+**test_v2.js for modified smart contract:**
+---
+Key Tests:
+
+- Deployment Test: Verifies that the total supply is assigned to the owner upon deployment.
+- Transfer Test: Tests token transfers between accounts and verifies the balances.
+- Event Emission Test: Checks that the Transfer event is emitted correctly during a transfer.
+- Last Sender/Receiver Test: Verifies that the contract correctly tracks the last sender and receiver addresses.
+- Last Timestamp Test: Verifies that the contract correctly tracks the timestamp of the last transaction.
+
 # License
 This project is licensed under the terms specified in the `LICENSE` file.
-
