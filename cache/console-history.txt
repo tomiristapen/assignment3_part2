@@ -1,6 +1,0 @@
-console.log(name);
-const name = await contract.name();
-const contract = await ethers.getContractAt("ERC20_smart_contract", "0x9f0b16B893149fD4a061ED3B518fcd06114D6d51");
-console.log(name);
-const name = await contract.name();
-const contract = await ethers.getContractAt("YourToken", "0x9f0b16B893149fD4a061ED3B518fcd06114D6d51");
