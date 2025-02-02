@@ -88,6 +88,14 @@ Key Tests:
 - Running Tests (npx hardhat test)  All test cases have passed successfully.
 - Deploying the Modified Smart Contract (npx hardhat run scripts/deploy2.js --network ganache) with inputs
 
+   ```bash
+   npx hardhat test
+   ```
+
+   ```bash
+   npx hardhat run scripts/deploy2.js
+   ``` 
+
 **Modified Smart Contract: AITU_SE_2314_16Token2.sol**
 ---
 Changes:
